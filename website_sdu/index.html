@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<html>
+
+<head>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <link rel="icon" href="resources/css/img/SDU_logo_tab.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Data Ukimet</title>
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+
+  <!-- Landing page -->
+  <div class="landing_background">
+    <div class="landing_content">
+      <div class="logo_main_description">
+        <img src="./resources/css/img/SDU_logo.png" class="SDU_logo"> </img>
+        <h1>Smart Data<br>Ukimet</h1>
+        <h3 class="intro">Информационная аналитическая система, позволяющая принимать
+            эффективные межведомственные решения</h3> 
+      </div>
+      <div class="landing_buttons">      
+        <a   class="landing_button" href="#container"><center>Вход</center></a>
+        <button class="landing_button1" id="myBtn"><center>Инструкция для регистрации</center></button>
+        
+        <div id="myModal" class="modal hidden">
+          <span class="close">&times;</span>
+          <div class="modal-content">
+            <h2>Регистрация в Smart Data Ukimet:</h2>
+            <ol>
+              <li>Официально отправить заявку в Министерство цифрового развития, инноваций и аэрокосмической промышленности на регистрацию учетной записи на Smart Data Ukimet (Шаблон заявки)</li>
+              <li>Вместе с заявкой в МЦРИАП необходимо направить подписанные условия оферты (Офферта)</li>
+              <li>Через 7 дней после отправки заявки на регистрацию, выполнить авторизацию на Smart Data Ukimet используя логин – эл. Почта указанная в заявки и одноразовый пароль 1Q2w3e4r%t^y</li>
+              <li>В случае возникновении проблем с авторизацеей просим вас обратиться по следующим контактам:</li>
+            </ol>
+            <h2>Требования:</h2>
+            <ol>
+              <li>Наличие электронной цифровой подписи (ЭЦП) от организации (министерства) или Kaztoken для авторизации</li>
+              <li>Наличие у рабочей станции доступа к ETC</li>
+            </ol>
+            <a  class="download" href="./resources/pdf/registration_sdu.pdf" target="_new" download>Скачать инструкцию</a>
+          </div>
+        </div>
+        <div class="overlay hidden" id = "overlay"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instruments -->
+  <div class="container" id="container">
+    <div class="grid">
+      <h2 class ='title'><center>Выберите инструмент</center></h2>
+      <div class="row">
+        <div class="cell">
+          <img class="logo" src="./resources/css/img/superset_t.png"></img>
+          <h3 class="instrument">Superset Тест</h3>
+          <div class="text_wrapper">
+            <p class="short_desc">Аналитические дашборды ИАС Smart Data Ukimet</p>
+            <button class="description" id="1" onclick="show_desc(this.id)">Подробнее</button>
+          </div>
+          <div class="button_instrument"><a class="link_instrument" href="#login">Войти</a></div>
+        </div>
+        <div class="cell">
+          <img class="logo" src="./resources/css/img/superset_b.png"></img>
+          <h3 class="instrument">Superset Бой</h3>
+          <div class="text_wrapper">
+            <p class="short_desc">Аналитические дашборды ИАС Smart Data Ukimet</p>
+            <button class="description" id="2" onclick="show_desc(this.id)">Подробнее</button>
+          </div>
+          <div class="button_instrument"><a class="link_instrument" href="#login">Войти</a></div>
+        </div>
+        <div class="cell">
+          <img class="logo" src="./resources/css/img/qliq.png"></img>
+          <h3 class="instrument">Qlik</h3>
+          <div class="text_wrapper">
+            <p class="short_desc">Конструктор для самостоятельного построения отчетов</p>
+            <button class="description" id="3"  onclick="show_desc(this.id)">Подробнее</button>
+          </div>
+          <div class="button_instrument"><a class="link_instrument" href="#login"><center>Войти</center></a></div>  
+        </div>
+        <div class="cell">
+          <img class="logo" src="./resources/css/img/data catalog.png"></img>
+          <h3 class="instrument">Data catalog</h3>
+          <div class="text_wrapper">
+            <p class="short_desc">Описание таблиц и полей 128 баз данных</p>
+            <button class="description" id="4"  onclick="show_desc(this.id)">Подробнее</button>
+          </div>
+          <div class="button_instrument"><a class="link_instrument" href="#login"><center>Войти</center></a></div>    
+        </div>
+        <!-- <div class="cell">
+          <img class="logo" src="./resources/css/img/katalog.png"></img>
+          <h3 class="instrument">Каталог отчетности</h3>
+          <div class="text_wrapper">
+            <p class="short_desc">Описание и удобный поиск 9000 показателей</p>
+            <button class="description" id="5" onclick="show_desc(this.id)">Подробнее</button>
+          </div>
+          <div class="button_instrument"><a class="link_instrument" href="#login"><center>Войти</center></a></div>
+        </div> -->
+        <!-- <div class="cell">
+          <img class="logo" src="./resources/css/img/a2.png"></img>
+          <h3 class="instrument"><center>A2</center></h3>
+          <a class="description" href="#"><center>Описание продукта</center></a>
+          <div class="button_instrument"><a class="link_instrument" href="#login"><center>Войти</center></a></div> 
+        </div> -->
+      </div>
+    </div>
+
+    <div class="overlay hidden" id = "overlay1"></div>
+    <div class="modal_description hidden">
+      <div class="modal_description-content">
+        <span class="close_desc">&times;</span>
+
+        <div class="description_content description_content--1 hidden">
+          <img class="logo_desc" src="./resources/css/img/superset_t.png" ></img>
+          <h2>Apache Superset</h2>
+          <p>
+              Apache Superset - это веб-приложение для исследования и визуализации данных. 
+              Суперсет обеспечивает интуитивно понятный интерфейс для изучения и визуализации наборов данных, 
+              а также для создания интерактивных информационных панелей.
+          </p>
+        </div>
+
+        <div class="description_content description_content--2 hidden">
+          <img class="logo_desc" src="./resources/css/img/superset_b.png" ></img>
+          <h2>Apache Superset</h2>
+          <p>
+              Apache Superset - это веб-приложение для исследования и визуализации данных. 
+              Суперсет обеспечивает интуитивно понятный интерфейс для изучения и визуализации наборов данных, 
+              а также для создания интерактивных информационных панелей.
+          </p>
+        </div>
+
+
+        <div class="description_content description_content--3 hidden">
+          <img class="logo_desc" src="./resources/css/img/qliq.png" ></img>
+          <h2>Qlik</h2>
+          <p>
+              Qlik Sense – платформа для анализа данных с широкими возможностями на базе AI. 
+              Наиболее мощная и полноценная платформа для визуального анализа ваших данных.
+          </p>
+        </div>
+
+        <div class="description_content description_content--4 hidden">
+          <img class="logo_desc" src="./resources/css/img/data catalog.png" ></img>
+          <h2>Data catalog</h2>
+          <p>
+            Каталог данных – это единый достоверный источник сведений об информационных активах организации, 
+            который поможет компании максимально использовать накопленные данные.
+          </p>
+        </div>
+
+        <div class="description_content description_content--5 hidden">
+          <img class="logo_desc" src="./resources/css/img/katalog.png" ></img>
+          <h2>Каталог отчетности</h2>
+          <p>
+            Каталог данных – это единый достоверный источник сведений об информационных активах организации, 
+            который поможет компании максимально использовать накопленные данные.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Login page -->
+  <!-- <div class="login" id="login">
+    <div calss="login_container">
+      <center><img class="login_logo" src="./resources/css/img/logos.png"></img></center>
+    </div>
+    <div class = "login_box">
+      <center>
+			<input class = "login_input" type="text" name="Username" placeholder="Логин" required >
+      <input class = "login_input" type="password" placeholder="Пароль" name="psw" required>
+      <button class="submit" type="submit">Войти</button>
+    </center>
+      <label class="check_label">
+        <br>
+        <center>
+        <input  type="checkbox" name="agree" required/> 
+        Согласиться с условиями пользовательского соглашения
+         <span class="checkmark"></span>
+        </center>
+      </label>
+		</div>
+  </div> -->
+
+
+</body>
+</html>
