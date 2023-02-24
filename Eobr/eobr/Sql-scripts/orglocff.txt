@@ -1,0 +1,17 @@
+SELECT l.NAME_RU as loc_name,
+l.`TYPE` as loc_type,
+l.KATO_CODE as kato,
+rd2.region_rus as region,
+rd2.kato2  as kato2,
+rd.raion_rus as raion,
+rd.kato4  as kato4,
+o.ID as org_id,
+o.`PATH`  AS can_see_org,
+o.NAME_RU as org_name,
+ot.NAME_RU as org_type
+FROM BTSD_EOBRASHENIYA.ORGANIZATIONS o 
+LEFT JOIN BTSD_EOBRASHENIYA.LOCATIONS l ON l.ID=o.LOCATION_ID 
+LEFT JOIN BTSD_EOBRASHENIYA.raion_dic rd ON rd.kato4=SUBSTRING(l.KATO_CODE,1,4) 
+LEFT JOIN BTSD_EOBRASHENIYA.region_dic rd2 ON rd2.kato2 =SUBSTRING(l.KATO_CODE,1,2)
+LEFT JOIN BTSD_EOBRASHENIYA.ORG_TYPES ot ON ot.ID=o.ORG_TYPE_ID
+WHERE o.DELETED <>1
