@@ -1,0 +1,13 @@
+[
+{"table_name": "CS_FACT_F05_WITH_DATE","form_id":"5","form_name":"5-ФОРМА ЕГСУ"},
+{"table_name": "CS_FACT_F09_WITH_DATE","form_id":"9","form_name":"9-ФОРМА ЕГСУ"},
+{"table_name": "CS_FACT_F46_OILGASBRAND_WITH_DATE","form_id":"46_NP","form_name":"46-ФОРМА НЕФТЕПРОДУКТОВ ЕГСУ"},
+{"table_name": "CS_FACT_F46_RAW_OILGAS_WITH_DATE","form_id":"46","form_name":"46-ФОРМА НЕФТИ ЕГСУ"},
+{"table_name": "CS_FACT_F06_WITH_DATE","form_id":"06","form_name":"6-ФОРМА ЕГСУ"},
+{"table_name": "CS_FACT_F10_WITH_DATE","form_id":"10","form_name":"10-ФОРМА ЕГСУ"},
+{"table_name": "CS_FACT_F31_WITH_DATE","form_id":"31","form_name":"31-ФОРМА ЕГСУ"},
+{"table_name": "CS_FACT_F34_WITH_DATE","form_id":"34","form_name":"34-ФОРМА ЕГСУ"},
+{"table_name": "CS_FACT_F40_WITH_DATE","form_id":"40","form_name":"40-ФОРМА ЕГСУ"},
+{"table_name": "CS_FACT_F52_WITH_DATE","form_id":"52","form_name":"52-ФОРМА ЕГСУ"},
+{"table_name": "CS_FACT_F66_WITH_DATE","form_id":"66","form_name":"66-ФОРМА ЕГСУ"}
+]
