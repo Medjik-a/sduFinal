@@ -1,0 +1,5 @@
+cx_Oracle
+airflow-pentaho-plugin
+apache-airflow-providers-ssh
+apache-airflow-providers-sftp
+pymongo
